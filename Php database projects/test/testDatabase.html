@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing for data</title>
+</head>
+<body>
+    <h1>Form to test database entry</h1>
+    <form action="test1.php" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2"><h1>User Registration</h1></td>
+                </tr>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" name="uname" value="" required></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email" value=""></td>
+                </tr>
+                <tr>
+                    <td>Mobile No. :</td>
+                    <td><input type="number" maxlength="10" name="mobile" value="" required></td>
+                </tr>
+                <tr>
+                    <td>Enter Password :</td>
+                    <td><input type="password" name="passwd" value=""></td>
+                </tr>
+                <tr>
+                    <td>Re-enter Password :</td>
+                    <td><input type="password" name="passwd" value=""></td>
+                </tr>
+                <tr>
+                    <td>Service Type :</td>
+                    <td>
+                        <input type="checkbox" name="service" value="tow-truck">
+                        Tow Truck Center
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="service" value="service-center">
+                        Vehicle Repair Center
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shop Name :</td>
+                    <td><input type="text" maxlength="30" name="shop-name" value="" required></td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea name="Address" id="Address" cols="30" rows="3" required>Enter shop's address</textarea></td>
+                </tr>
+                <tr>
+                    <td>Website Link :</td>
+                    <td><textarea name="weblink" id="weblink" cols="30" rows="3">Enter Website link</textarea></td>
+                </tr>
+                <tr>
+                    <td>Destination :</td>
+                    <td><textarea name="dest" id="destination" cols="30" rows="6">Enter shop's destination..</textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="reset" name="reset" value="Reset"></td>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
